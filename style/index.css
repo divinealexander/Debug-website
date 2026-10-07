@@ -98,7 +98,7 @@ nav ul a {
             rgba(0, 0, 0, 0.45)
         ),
 
-        url("/media/img3.jpg");
+        url("../media/img3.jpg");
 
     background-size: cover;
 
