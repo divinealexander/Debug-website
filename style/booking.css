@@ -955,3 +955,48 @@ nav ul a {
         padding: 20px 17px;
     }
 }
+
+/* =========================
+   RESPONSIVE FINAL FIXES
+========================= */
+.menu-btn {
+    display: none;
+    border: none;
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.booking-card { min-width: 0; }
+.booking-card form { min-width: 0; }
+.input-box input, .input-box select, .form-group textarea { min-width: 0; }
+
+@media (max-width: 768px) {
+    .menu-btn { display: block; }
+    .booking-hero { min-height: 36vh; padding: 45px 20px; }
+    .booking-hero h1 { font-size: 38px; line-height: 1.15; }
+    .booking-hero span { display: block; line-height: 1.6; }
+    .booking-card { padding: 28px 22px; }
+    .card-heading { align-items: flex-start; }
+    .booking-summary { flex-direction: column; align-items: stretch; text-align: center; }
+    .summary-price { align-items: center; }
+    .confirm-btn { width: 100%; }
+    .footer-container { flex-wrap: wrap; gap: 35px; }
+    .footer-column { min-width: 220px; }
+}
+
+@media (max-width: 480px) {
+    .booking-section { width: 92%; padding: 40px 0 55px; }
+    .booking-card { padding: 22px 16px; }
+    .heading-icon { width: 44px; height: 44px; flex: 0 0 44px; }
+    .card-heading h2 { font-size: 18px; }
+    .booking-hero h1 { font-size: 30px; }
+    .booking-hero p { font-size: 13px; }
+    .booking-summary { padding: 22px 16px; }
+    .booking-summary h2 { font-size: 21px; }
+    .summary-price strong { font-size: 28px; }
+    .footer-container { flex-direction: column; }
+    .footer-column { min-width: 0; }
+}
