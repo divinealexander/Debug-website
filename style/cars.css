@@ -1,0 +1,748 @@
+:root {
+    --primary-color: #111111;
+    --secondary-color: #1F1F1F;
+    --accent-color: #C1121F;
+
+    --white-color: #FFFFFF;
+    --light-color: #F5F5F5;
+    --gray-color: #666666;
+
+    --text-color: #222222;
+
+    --main-width: 90%;
+    --border-radius: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--light-color);
+
+    color: var(--text-color);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    width: 100%;
+    background-color: var(--white-color);
+}
+
+
+nav {
+    width: var(--main-width);
+
+    margin: 0 auto;
+
+    padding: 25px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo {
+    text-decoration: none;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: var(--primary-color);
+}
+
+
+nav ul {
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+
+nav ul a {
+    text-decoration: none;
+
+    color: var(--text-color);
+
+    font-size: 16px;
+}
+
+
+.login-btn {
+    text-decoration: none;
+
+    color: var(--white-color);
+
+    background-color: var(--accent-color);
+
+    padding: 12px 24px;
+
+    border-radius: var(--border-radius);
+}
+
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero {
+    width: 100%;
+
+    min-height: 45vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("images/cars-page.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--white-color);
+}
+
+
+.page-hero p {
+    color: var(--accent-color);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.page-hero h1 {
+    font-size: 50px;
+
+    max-width: 700px;
+
+    margin-bottom: 20px;
+}
+
+
+.page-hero span {
+    font-size: 17px;
+}
+
+
+/* =========================
+   ALL CARS
+========================= */
+
+.all-cars {
+    width: var(--main-width);
+
+    margin: 0 auto;
+
+    padding: 70px 0;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.section-heading p {
+    color: var(--accent-color);
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.section-heading h2 {
+    font-size: 38px;
+
+    color: var(--primary-color);
+}
+
+
+/* =========================
+   CAR GRID
+========================= */
+
+.cars-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.car-card {
+    background-color: var(--white-color);
+
+    border-radius: var(--border-radius);
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.car-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================
+   CAR IMAGE
+========================= */
+
+.car-image {
+    width: 100%;
+
+    height: 220px;
+}
+
+
+.car-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   CAR INFORMATION
+========================= */
+
+.car-info {
+    padding: 20px;
+}
+
+
+.car-name {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+}
+
+
+.car-name h3 {
+    font-size: 20px;
+
+    color: var(--primary-color);
+}
+
+
+.car-name span {
+    color: var(--accent-color);
+
+    font-size: 14px;
+}
+
+
+.car-name i {
+    margin-right: 4px;
+}
+
+
+.car-type {
+    color: var(--gray-color);
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+.car-type i {
+    color: var(--accent-color);
+
+    margin-right: 6px;
+}
+
+
+.car-details {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-top: 1px solid #eee;
+
+    border-bottom: 1px solid #eee;
+
+    margin-bottom: 18px;
+}
+
+
+.car-details span {
+    color: var(--gray-color);
+
+    font-size: 13px;
+}
+
+
+.car-details i {
+    color: var(--accent-color);
+
+    margin-right: 5px;
+}
+
+
+.car-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.price strong {
+    font-size: 22px;
+
+    color: var(--primary-color);
+}
+
+
+.price span {
+    font-size: 13px;
+
+    color: var(--gray-color);
+}
+
+
+.details-btn {
+    text-decoration: none;
+
+    background-color: var(--accent-color);
+
+    color: var(--white-color);
+
+    padding: 10px 16px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.details-btn:hover,
+.login-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--primary-color);
+
+    color: var(--white-color);
+
+    text-align: center;
+
+    padding: 30px;
+}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+
+/* =========================
+   TABLET / SMALL LAPTOP
+========================= */
+
+@media (max-width: 1024px) {
+
+    /* NAVBAR */
+
+    nav {
+        width: 90%;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+
+    /* HERO */
+
+    .page-hero h1 {
+        font-size: 42px;
+    }
+
+
+    /* CARS */
+
+    .cars-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .car-image {
+        height: 220px;
+    }
+
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 25px;
+    }
+
+
+    /* HERO */
+
+    .page-hero {
+        min-height: 40vh;
+        padding: 50px 20px;
+    }
+
+    .page-hero h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .page-hero span {
+        font-size: 16px;
+    }
+
+
+    /* ALL CARS */
+
+    .all-cars {
+        width: 90%;
+        padding: 60px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* CAR GRID */
+
+    .cars-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    /* CAR IMAGE */
+
+    .car-image {
+        height: 200px;
+    }
+
+
+    /* CAR INFO */
+
+    .car-info {
+        padding: 18px;
+    }
+
+    .car-name h3 {
+        font-size: 18px;
+    }
+
+    .car-details {
+        gap: 12px;
+    }
+
+    .car-details span {
+        font-size: 12px;
+    }
+
+    .price strong {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+
+    nav {
+        width: 90%;
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul {
+        gap: 12px 18px;
+    }
+
+    nav ul a {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .page-hero {
+        min-height: 350px;
+        padding: 40px 20px;
+    }
+
+    .page-hero p {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .page-hero h1 {
+        font-size: 30px;
+        line-height: 1.25;
+        margin-bottom: 15px;
+    }
+
+    .page-hero span {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* CARS SECTION */
+
+    .all-cars {
+        width: 90%;
+        padding: 45px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading p {
+        font-size: 12px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+
+    /* CAR GRID */
+
+    .cars-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    /* CAR IMAGE */
+
+    .car-image {
+        height: 230px;
+    }
+
+
+    /* CAR INFORMATION */
+
+    .car-info {
+        padding: 20px;
+    }
+
+    .car-name h3 {
+        font-size: 19px;
+    }
+
+    .car-name span {
+        font-size: 13px;
+    }
+
+    .car-type {
+        font-size: 13px;
+    }
+
+
+    /* CAR DETAILS */
+
+    .car-details {
+        gap: 15px;
+        padding: 13px 0;
+    }
+
+    .car-details span {
+        font-size: 12px;
+    }
+
+
+    /* BOTTOM */
+
+    .car-bottom {
+        gap: 15px;
+    }
+
+    .price strong {
+        font-size: 21px;
+    }
+
+    .price span {
+        font-size: 12px;
+    }
+
+    .details-btn {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+}
+
+/* =========================
+   CARS - ULTRA WIDE
+========================= */
+
+@media (min-width: 2000px) {
+
+    .all-cars {
+        width: 90%;
+        max-width: 2200px;
+        padding: 120px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 48px;
+    }
+
+    .section-heading p {
+        font-size: 16px;
+    }
+
+    .cars-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+
+    .car-image {
+        height: 350px;
+    }
+
+    .car-info {
+        padding: 30px;
+    }
+
+    .car-name h3 {
+        font-size: 26px;
+    }
+
+    .car-name span {
+        font-size: 17px;
+    }
+
+    .car-type {
+        font-size: 16px;
+    }
+
+    .car-details {
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .car-details span {
+        font-size: 15px;
+    }
+
+    .price strong {
+        font-size: 28px;
+    }
+
+    .details-btn {
+        padding: 14px 22px;
+        font-size: 15px;
+    }
+
+}
+
+

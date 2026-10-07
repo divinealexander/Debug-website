@@ -1,0 +1,682 @@
+:root {
+
+    --primary-color: #111111;
+    --secondary-color: #1F1F1F;
+    --accent-color: #C1121F;
+
+    --white-color: #FFFFFF;
+    --light-color: #F5F5F5;
+    --gray-color: #666666;
+
+    --text-color: #222222;
+    --border-color: #DDDDDD;
+
+    --main-width: 90%;
+
+    --border-radius: 10px;
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color:
+        var(--light-color);
+
+    color:
+        var(--text-color);
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+
+    background-color:
+        var(--white-color);
+
+    width: 100%;
+}
+
+
+nav {
+
+    width:
+        var(--main-width);
+
+    margin:
+        0 auto;
+
+    padding:
+        25px 0;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+}
+
+
+.logo {
+
+    text-decoration:
+        none;
+
+    color:
+        var(--primary-color);
+
+    font-size:
+        28px;
+
+    font-weight:
+        bold;
+}
+
+
+nav ul {
+
+    display:
+        flex;
+
+    gap:
+        30px;
+
+    list-style:
+        none;
+}
+
+
+nav ul a {
+
+    text-decoration:
+        none;
+
+    color:
+        var(--text-color);
+
+    font-size:
+        15px;
+}
+
+
+.login-btn {
+
+    text-decoration:
+        none;
+
+    color:
+        var(--white-color);
+
+    background-color:
+        var(--accent-color);
+
+    padding:
+        12px 24px;
+
+    border-radius:
+        var(--border-radius);
+}
+
+
+/* =========================
+   SUCCESS SECTION
+========================= */
+
+.success-section {
+
+    min-height:
+        calc(100vh - 90px);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        60px 20px;
+}
+
+
+.success-card {
+
+    width:
+        650px;
+
+    max-width:
+        100%;
+
+    background-color:
+        var(--white-color);
+
+    padding:
+        50px;
+
+    border-radius:
+        15px;
+
+    text-align:
+        center;
+
+    box-shadow:
+        0 10px 35px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   SUCCESS ICON
+========================= */
+
+.success-icon {
+
+    width:
+        75px;
+
+    height:
+        75px;
+
+    margin:
+        0 auto 25px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    background-color:
+        var(--accent-color);
+
+    color:
+        var(--white-color);
+
+    border-radius:
+        50%;
+
+    font-size:
+        32px;
+}
+
+
+.success-label {
+
+    color:
+        var(--accent-color);
+
+    font-size:
+        13px;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        2px;
+
+    margin-bottom:
+        12px;
+}
+
+
+.success-card h1 {
+
+    font-size:
+        35px;
+
+    color:
+        var(--primary-color);
+
+    margin-bottom:
+        15px;
+}
+
+
+.success-text {
+
+    color:
+        var(--gray-color);
+
+    line-height:
+        1.7;
+
+    font-size:
+        15px;
+
+    margin-bottom:
+        35px;
+}
+
+
+/* =========================
+   BOOKING DETAILS
+========================= */
+
+.booking-details {
+
+    text-align:
+        left;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        var(--border-radius);
+
+    padding:
+        25px;
+
+    margin-bottom:
+        25px;
+}
+
+
+.booking-details h2 {
+
+    font-size:
+        20px;
+
+    margin-bottom:
+        20px;
+
+    color:
+        var(--primary-color);
+}
+
+
+.detail-row {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid #eeeeee;
+}
+
+
+.detail-row:last-child {
+
+    border-bottom:
+        none;
+}
+
+
+.detail-row span {
+
+    color:
+        var(--gray-color);
+
+    font-size:
+        14px;
+}
+
+
+.detail-row span i {
+
+    width:
+        20px;
+
+    color:
+        var(--accent-color);
+
+    margin-right:
+        8px;
+}
+
+
+.detail-row strong {
+
+    color:
+        var(--primary-color);
+
+    font-size:
+        14px;
+
+    text-align:
+        right;
+}
+
+
+.total-row {
+
+    margin-top:
+        5px;
+
+    padding-top:
+        20px;
+}
+
+
+.total-row strong {
+
+    font-size:
+        24px;
+
+    color:
+        var(--accent-color);
+}
+
+
+/* =========================
+   CONFIRMATION MESSAGE
+========================= */
+
+.confirmation-message {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    text-align:
+        left;
+
+    padding:
+        15px;
+
+    background-color:
+        #f8f8f8;
+
+    border-radius:
+        8px;
+
+    margin-bottom:
+        30px;
+}
+
+
+.confirmation-message i {
+
+    color:
+        var(--accent-color);
+
+    font-size:
+        18px;
+}
+
+
+.confirmation-message p {
+
+    font-size:
+        13px;
+
+    color:
+        var(--gray-color);
+
+    line-height:
+        1.5;
+}
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.success-buttons {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    gap:
+        15px;
+
+    flex-wrap:
+        wrap;
+}
+
+
+.success-buttons a {
+
+    text-decoration:
+        none;
+
+    padding:
+        14px 22px;
+
+    border-radius:
+        var(--border-radius);
+
+    font-size:
+        14px;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s;
+}
+
+
+.primary-btn {
+
+    background-color:
+        var(--accent-color);
+
+    color:
+        var(--white-color);
+}
+
+
+.primary-btn:hover {
+
+    background-color:
+        var(--primary-color);
+}
+
+
+.secondary-btn {
+
+    border:
+        1px solid var(--border-color);
+
+    color:
+        var(--primary-color);
+
+    background-color:
+        var(--white-color);
+}
+
+
+.secondary-btn:hover {
+
+    border-color:
+        var(--primary-color);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background-color:
+        var(--primary-color);
+
+    color:
+        #aaaaaa;
+
+    text-align:
+        center;
+
+    padding:
+        20px;
+
+    font-size:
+        13px;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        width: 92%;
+        position: relative;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .login-btn {
+        display: none;
+    }
+
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    .nav-links.show-menu {
+        display: flex;
+
+        flex-direction: column;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        gap: 20px;
+
+        background-color: var(--white-color);
+
+        box-shadow:
+            0 5px 15px rgba(0, 0, 0, .1);
+
+        z-index: 1000;
+    }
+
+
+    .success-section {
+        padding: 45px 15px;
+    }
+
+
+    .success-card {
+        padding: 30px 22px;
+    }
+
+
+    .booking-summary {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .success-buttons {
+        flex-direction: column;
+    }
+
+
+    .success-buttons a {
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 23px;
+    }
+
+
+    .success-card {
+        padding: 25px 18px;
+    }
+
+
+    .success-card h1 {
+        font-size: 30px;
+    }
+
+
+    .success-icon {
+        width: 60px;
+        height: 60px;
+
+        font-size: 23px;
+    }
+
+
+    .booking-summary {
+        padding: 20px 15px;
+    }
+
+
+    .detail-row {
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+
+    .detail-row strong {
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .success-card h1 {
+        font-size: 27px;
+    }
+}
+

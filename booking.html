@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>LEX-DRIVE - Book Your Car</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/style/booking.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <header>
+
+        <nav>
+
+            <a href="index.html" class="logo">
+                LEX-DRIVE
+            </a>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="cars.html">Cars</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+            <a href="login.html"
+                class="login-btn">
+
+                Login
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         BOOKING HERO
+    ========================= -->
+
+    <section class="booking-hero">
+
+        <div>
+
+            <p>
+                RESERVE YOUR RIDE
+            </p>
+
+            <h1>
+                Book Your Car
+            </h1>
+
+            <span>
+                Complete the form below and
+                prepare for your journey.
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BOOKING SECTION
+    ========================= -->
+
+    <main>
+
+        <section class="booking-section">
+
+
+            <div class="booking-container">
+
+
+                <!-- =====================
+                     CUSTOMER INFORMATION
+                ====================== -->
+
+                <div class="booking-card">
+
+                    <div class="card-heading">
+
+                        <div class="heading-icon">
+
+                            <i class="fa-solid fa-user"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Customer Information
+                            </h2>
+
+                            <p>
+                                Tell us about yourself.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form>
+
+
+                        <div class="form-row">
+
+
+                            <!-- FULL NAME -->
+
+                            <div class="form-group">
+
+                                <label for="full-name">
+                                    Full Name
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-user"></i>
+
+                                    <input
+                                        type="text"
+                                        id="full-name"
+                                        placeholder="Your full name"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-envelope"></i>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        placeholder="Your email"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    placeholder="Your phone number"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DRIVER'S LICENSE -->
+
+                        <div class="form-group">
+
+                            <label for="license">
+                                Driver's License Number
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-id-card"></i>
+
+                                <input
+                                    type="text"
+                                    id="license"
+                                    placeholder="Enter license number"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+
+                <!-- =====================
+                     BOOKING INFORMATION
+                ====================== -->
+
+                <div class="booking-card">
+
+                    <div class="card-heading">
+
+                        <div class="heading-icon">
+
+                            <i class="fa-solid fa-car"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Booking Information
+                            </h2>
+
+                            <p>
+                                Tell us about your trip.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form>
+
+
+                        <!-- PICKUP & DROPOFF -->
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="pickup">
+                                    Pick-up Location
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                    <input
+                                        type="text"
+                                        id="pickup"
+                                        placeholder="Pick-up location"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="dropoff">
+                                    Drop-off Location
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                    <input
+                                        type="text"
+                                        id="dropoff"
+                                        placeholder="Drop-off location"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DATES -->
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="pickup-date">
+                                    Pick-up Date
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-calendar"></i>
+
+                                    <input
+                                        type="date"
+                                        id="pickup-date"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="return-date">
+                                    Return Date
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-calendar-check"></i>
+
+                                    <input
+                                        type="date"
+                                        id="return-date"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CAR -->
+
+                        <div class="form-group">
+
+                            <label for="car">
+                                Select Car
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-car-side"></i>
+
+                                <select id="car">
+
+                                    <option value="">
+                                        Choose a car
+                                    </option>
+
+                                    <option value="bmw">
+                                        BMW 3 Series - $80/day
+                                    </option>
+
+                                    <option value="mercedes">
+                                        Mercedes C-Class - $100/day
+                                    </option>
+
+                                    <option value="range-rover">
+                                        Range Rover - $140/day
+                                    </option>
+
+                                    <option value="audi">
+                                        Audi A6 - $110/day
+                                    </option>
+
+                                    <option value="porsche">
+                                        Porsche 911 - $200/day
+                                    </option>
+
+                                    <option value="g-wagon">
+                                        Mercedes G-Wagon - $180/day
+                                    </option>
+
+                                </select>
+
+                            </div>
+    <p class="daily-price" id="daily-price">
+        Daily rate: $0
+    </p>
+
+                        </div>
+
+
+                        <!-- PAYMENT -->
+
+                        <div class="form-group">
+
+                            <label for="payment">
+                                Payment Method
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-credit-card"></i>
+
+                                <select id="payment">
+
+                                    <option value="">
+                                        Choose payment method
+                                    </option>
+
+                                    <option value="card">
+                                        Credit / Debit Card
+                                    </option>
+
+                                    <option value="transfer">
+                                        Bank Transfer
+                                    </option>
+
+                                    <option value="cash">
+                                        Pay at Pickup
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SPECIAL REQUEST -->
+
+                        <div class="form-group">
+
+                            <label for="request">
+                                Special Request
+                            </label>
+
+                            <textarea
+                                id="request"
+                                rows="4"
+                                placeholder="Anything we should know?"></textarea>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 BOOKING SUMMARY
+            ========================= -->
+
+            <div class="booking-summary">
+
+                <div>
+
+                    <h2>
+                        Ready to Book?
+                    </h2>
+
+                    <p>
+                        Review your information and
+                        confirm your booking request.
+                    </p>
+
+                </div>
+
+
+              <div class="summary-price">
+
+    <span>
+        Estimated Total
+    </span>
+
+    <strong id="total-price">
+        $0
+    </strong>
+
+    <small id="rental-days">
+        Select your dates
+    </small>
+
+</div>
+
+
+                <button
+                    type="button"
+                    class="confirm-btn">
+
+                    Confirm Booking
+
+                    <i class="fa-solid fa-check"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-column">
+
+                <a href="index.html"
+                    class="footer-logo">
+
+                    LEX-DRIVE
+
+                </a>
+
+                <p>
+                    Your trusted partner for
+                    comfortable, reliable and
+                    premium car rentals.
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a href="https://facebook.com"
+                        target="_blank">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="https://instagram.com"
+                        target="_blank">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="https://x.com"
+                        target="_blank">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="cars.html">
+                            Cars
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">
+                            FAQs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="privacy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +234 9061726753
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@lex-drive.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Lagos, Nigeria
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LEX-DRIVE.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+<script src="/scripts/booking.js"></script>
+<script src="/scripts/menu.js"></script>
+
+</body>
+
+</html>
