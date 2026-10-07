@@ -1222,6 +1222,12 @@ nav ul a {
         font-size: 25px;
     }
 
+     .hero-btn {
+        padding: 13px 20px;
+        font-size: 14px;
+    }
+
+
     .car-image {
         height: 180px;
     }
