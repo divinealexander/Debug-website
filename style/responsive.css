@@ -1298,3 +1298,72 @@ header nav {
     }
 }
 
+
+
+/* =====================================================
+   MOBILE MENU LOGIN BUTTON + HOME HERO BUTTON
+   The Login button lives inside the opened nav menu
+   on phones. The desktop Login button stays unchanged.
+===================================================== */
+
+.mobile-login-item {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Show the Login button inside the opened menu. */
+    nav ul.nav-links .mobile-login-item {
+        display: block !important;
+        width: 100% !important;
+        margin-top: 10px !important;
+        padding-top: 10px !important;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    nav ul.nav-links .mobile-login-link {
+        display: block !important;
+        width: 100% !important;
+        padding: 12px 18px !important;
+        text-align: center !important;
+        background-color: var(--accent-color, #C1121F) !important;
+        color: var(--white-color, #FFFFFF) !important;
+        border-radius: var(--border-radius, 10px) !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+    }
+
+    nav ul.nav-links .mobile-login-link:hover {
+        background-color: var(--secondary-color, #1F1F1F) !important;
+        color: var(--white-color, #FFFFFF) !important;
+    }
+
+    /* Keep the desktop Login button hidden while the menu is in mobile mode. */
+    nav > .login-btn {
+        display: none !important;
+    }
+
+    /* Center Browse Cars on the home hero on every small screen. */
+    .hero {
+        text-align: center !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    .hero-btn {
+        display: inline-flex !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .hero-btn {
+        padding: 13px 20px !important;
+        font-size: 14px !important;
+    }
+}

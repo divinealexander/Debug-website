@@ -951,11 +951,7 @@ nav ul a {
     .hero-text {
         font-size: 16px;
     }
-    
-    .hero-text {
-        font-size: 14px;
-        line-height: 1.6;
-    }
+
 
    
 
@@ -1225,12 +1221,6 @@ nav ul a {
     .section-heading h2 {
         font-size: 25px;
     }
-
-     .hero-btn {
-        padding: 13px 20px;
-        font-size: 14px;
-    }
-
 
     .car-image {
         height: 180px;
